@@ -1,4 +1,4 @@
-# openapi-java-client
+# openapi-java-client [![tests](https://github.com/sigpwned/pinecone-java-client/actions/workflows/tests.yml/badge.svg)](https://github.com/sigpwned/pinecone-java-client/actions/workflows/tests.yml) [![maven](https://img.shields.io/maven-central/v/com.sigpwned/pinecone-java-client))(https://img.shields.io/maven-central/v/com.sigpwned/pinecone-java-client)
 
 This is a Java client for the [Pinecone vector database API](https://www.pinecone.io/). While there is an official [Pinecone Java client](https://github.com/pinecone-io/pinecone-java-client), at the time of this writing, it does not support all endpoints. Specifically:
 
