@@ -3,17 +3,10 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# generation temp files
-.openapi-generator/**
-api/openapi.yaml
-
 # Package Files #
 *.jar
 *.war
 *.ear
-
-# Editor Files #
-*~
 
 # exclude jar for gradle wrapper
 !gradle/wrapper/*.jar
@@ -26,3 +19,15 @@ hs_err_pid*
 target
 .gradle
 build
+
+# openapi generator files
+api/
+.openapi-generator/
+
+# emacs
+*~
+
+# eclipse
+.settings/
+.project
+.classpath
