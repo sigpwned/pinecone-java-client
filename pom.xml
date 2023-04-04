@@ -161,10 +161,7 @@
                         <useSwaggerAnnotations>false</useSwaggerAnnotations>
                         <library>native</library>
                         <serializationLibrary>jackson</serializationLibrary>
-                        <!--
-                        <sourceFolder>${project.build.directory}/generated-sources/openapi</sourceFolder>
-                        <testOutput>${project.build.directory}/generated-test-sources/openapi</testOutput>
-                        -->
+                        <useRuntimeException>true</useRuntimeException>
                     </configOptions>
                 </configuration>
                 <executions>
@@ -175,14 +172,9 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <!--
-                            <generateApis>false</generateApis>
-                            <generateModels>false</generateModels>
-                            -->
                             <generateSupportingFiles>true</generateSupportingFiles>
                             <generateModelTests>true</generateModelTests>
                             <generateApiTests>true</generateApiTests>
-                            <!-- <addTestCompileSourceRoot>true</addTestCompileSourceRoot>-->
                             <output>${project.build.directory}/generated-test-sources/openapi</output>
                             <configOptions>
                                 <sourceFolder>src/main/java</sourceFolder>
@@ -201,7 +193,6 @@
                             <generateSupportingFiles>true</generateSupportingFiles>
                             <generateModelTests>false</generateModelTests>
                             <generateApiTests>false</generateApiTests>
-                            <!-- <addCompileSourceRoot>true</addCompileSourceRoot> -->
                             <configOptions>
                                 <sourceFolder>target/generated-sources/openapi/src/main/java</sourceFolder>
                             </configOptions>

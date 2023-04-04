@@ -37,3 +37,4 @@ api/**
 src/main/AndroidManifest.xml
 .gitignore
 README.md
+.github/workflows/maven.yml
