@@ -62,9 +62,9 @@ public class PineconeClient {
    * @see com.sigpwned.pinecone.client.service.IndexOperationsApi#configureIndex(java.lang.String,
    *      com.sigpwned.pinecone.client.model.IndexConfiguration)
    */
-  public String configureIndex(String indexName, IndexConfiguration indexConfiguration)
+  public void configureIndex(String indexName, IndexConfiguration indexConfiguration)
       throws ApiException {
-    return getIndexApi().configureIndex(indexName, indexConfiguration);
+    getIndexApi().configureIndex(indexName, indexConfiguration);
   }
 
   /**
@@ -73,8 +73,8 @@ public class PineconeClient {
    * @throws ApiException
    * @see com.sigpwned.pinecone.client.service.IndexOperationsApi#createCollection(com.sigpwned.pinecone.client.model.CollectionDefinition)
    */
-  public String createCollection(CollectionDefinition collectionDefinition) throws ApiException {
-    return getIndexApi().createCollection(collectionDefinition);
+  public void createCollection(CollectionDefinition collectionDefinition) throws ApiException {
+    getIndexApi().createCollection(collectionDefinition);
   }
 
   /**
@@ -83,8 +83,8 @@ public class PineconeClient {
    * @throws ApiException
    * @see com.sigpwned.pinecone.client.service.IndexOperationsApi#createIndex(com.sigpwned.pinecone.client.model.IndexDefinition)
    */
-  public String createIndex(IndexDefinition indexDefinition) throws ApiException {
-    return getIndexApi().createIndex(indexDefinition);
+  public void createIndex(IndexDefinition indexDefinition) throws ApiException {
+    getIndexApi().createIndex(indexDefinition);
   }
 
   /**
@@ -93,8 +93,8 @@ public class PineconeClient {
    * @throws ApiException
    * @see com.sigpwned.pinecone.client.service.IndexOperationsApi#deleteCollection(java.lang.String)
    */
-  public String deleteCollection(String collectionName) throws ApiException {
-    return getIndexApi().deleteCollection(collectionName);
+  public void deleteCollection(String collectionName) throws ApiException {
+    getIndexApi().deleteCollection(collectionName);
   }
 
   /**
@@ -103,8 +103,8 @@ public class PineconeClient {
    * @throws ApiException
    * @see com.sigpwned.pinecone.client.service.IndexOperationsApi#deleteIndex(java.lang.String)
    */
-  public String deleteIndex(String indexName) throws ApiException {
-    return getIndexApi().deleteIndex(indexName);
+  public void deleteIndex(String indexName) throws ApiException {
+    getIndexApi().deleteIndex(indexName);
   }
 
   /**
