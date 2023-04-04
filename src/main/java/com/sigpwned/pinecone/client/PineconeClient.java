@@ -57,7 +57,6 @@ public class PineconeClient {
   /**
    * @param indexName
    * @param indexConfiguration
-   * @return
    * @throws ApiException
    * @see com.sigpwned.pinecone.client.service.IndexOperationsApi#configureIndex(java.lang.String,
    *      com.sigpwned.pinecone.client.model.IndexConfiguration)
@@ -69,7 +68,6 @@ public class PineconeClient {
 
   /**
    * @param collectionDefinition
-   * @return
    * @throws ApiException
    * @see com.sigpwned.pinecone.client.service.IndexOperationsApi#createCollection(com.sigpwned.pinecone.client.model.CollectionDefinition)
    */
@@ -79,7 +77,6 @@ public class PineconeClient {
 
   /**
    * @param indexDefinition
-   * @return
    * @throws ApiException
    * @see com.sigpwned.pinecone.client.service.IndexOperationsApi#createIndex(com.sigpwned.pinecone.client.model.IndexDefinition)
    */
@@ -89,7 +86,6 @@ public class PineconeClient {
 
   /**
    * @param collectionName
-   * @return
    * @throws ApiException
    * @see com.sigpwned.pinecone.client.service.IndexOperationsApi#deleteCollection(java.lang.String)
    */
@@ -99,7 +95,6 @@ public class PineconeClient {
 
   /**
    * @param indexName
-   * @return
    * @throws ApiException
    * @see com.sigpwned.pinecone.client.service.IndexOperationsApi#deleteIndex(java.lang.String)
    */
