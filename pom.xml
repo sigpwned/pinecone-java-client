@@ -4,7 +4,7 @@
     <artifactId>pinecone-java-client</artifactId>
     <packaging>jar</packaging>
     <name>pinecone-java-client</name>
-    <version>20230401.1.2-SNAPSHOT</version>
+    <version>20230404.0.0-SNAPSHOT</version>
     <url>https://github.com/sigpwned/pinecone-java-client</url>
     <inceptionYear>2023</inceptionYear>
     <description>Pinecone Java Client</description>
@@ -148,7 +148,7 @@
                         <!-- <typeMapping>string+AccountId=AccountId</typeMapping> -->
                     </typeMappings>
                     <generatorName>java</generatorName>
-                    <inputSpec>https://raw.githubusercontent.com/sigpwned/pinecone-openapi-spec/v20230401.1/openapi.yml</inputSpec>
+                    <inputSpec>https://raw.githubusercontent.com/sigpwned/pinecone-openapi-spec/v20230404.0/openapi.yml</inputSpec>
                     <output>${project.basedir}</output>
                     <addCompileSourceRoot>false</addCompileSourceRoot>
                     <addTestCompileSourceRoot>false</addTestCompileSourceRoot>
