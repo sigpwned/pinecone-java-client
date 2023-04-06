@@ -31,3 +31,6 @@ api/
 .settings/
 .project
 .classpath
+
+# maven
+release.properties
