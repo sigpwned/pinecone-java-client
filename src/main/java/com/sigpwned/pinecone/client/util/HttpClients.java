@@ -25,6 +25,7 @@ public final class HttpClients {
   private HttpClients() {}
 
   public static HttpClient.Builder defaultHttpClient() {
-    return HttpClient.newBuilder();
+    return HttpClient.newBuilder()
+        .version(HttpClient.Version.HTTP_1_1);
   }
 }
